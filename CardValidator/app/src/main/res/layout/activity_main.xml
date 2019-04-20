@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    //Row 1
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias=".2">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:text="Card Number "
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/card"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:layout_marginLeft="-115dp"
+            android:textSize="15dp"
+            />
+    </LinearLayout>
+
+
+    //Row 1
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias=".35">
+
+
+        <EditText
+            android:id="@+id/msg"
+            android:layout_width="-100dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:layout_marginLeft="150dp"
+            android:textSize="15dp"
+            android:visibility="gone"
+            android:enabled="false"
+            android:background="#00000000"
+
+            />
+    </LinearLayout>
+
+
+    //Row 6 for the button
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias=".35">
+
+        <Button
+            android:id="@+id/validate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="Validate"
+
+            />
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

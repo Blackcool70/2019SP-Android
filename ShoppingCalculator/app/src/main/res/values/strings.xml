@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Shopping Calculator</string>
+    <string name="title_activity_table">TableActivity</string>
+    <string name="title_activity_shopping2">Shopping2Activity</string>
+</resources>
